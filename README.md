@@ -1,2 +1,2 @@
-# CSD430
+# csd-430
 This repository is for the Bellevue Uni class CSD - 430
