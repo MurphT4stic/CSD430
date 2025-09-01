@@ -18,6 +18,12 @@
             <label>Email:</label>
             <input type="email" name="email" required><br>
 
+            <label>Phone Number:</label>
+            <input type="tel" name="phoneNumber" required><br>
+
+            <label>Position Applied For:</label>
+            <input type="text" name="position" required><br>
+
             <input type="submit" value="Submit">
             </form>
 

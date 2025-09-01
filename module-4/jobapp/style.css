@@ -1,0 +1,18 @@
+/*Tabari Harvey, Module-4 Assignment, CSD430*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f5f5f5;
+
+}
+
+h1 {
+    color: darkblue;
+}
+
+form, table {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
