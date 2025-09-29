@@ -1,0 +1,27 @@
+<!--Tabari Harvey, Module-8 Assignment Project Part 4, CSD 430-->
+<!--This JSP file generates a dropdown list of movies from the database and allows the user to select one to view its details.-->
+<%@ page import="movies.MovieBean" %>
+<%@ page import="java.util.*" %>
+<html>
+<head><title>Select a Movie</title></head>
+<body>
+<h2>Select a Movie</h2>
+<form action="displayMovie.jsp" method="post">
+    <select name="movie_id">
+    <%
+        try {
+            List<MovieBean> movieList = MovieBean.getMovieKeys();
+            for (MovieBean m : movieList) {
+    %>
+                <option value="<%= m.getMovie_id() %>"><%= m.getTitle() %></option>
+    <%
+            }
+        } catch(Exception e) {
+            out.println("<option>Error: " + e.getMessage() + "</option>");
+        }
+    %>
+    </select>
+    <input type="submit" value="Show Movie">
+</form>
+</body>
+</html>
